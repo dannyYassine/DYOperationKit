@@ -1,0 +1,6 @@
+framework module Pods_DYOpreationKit_Example {
+  umbrella header "Pods-DYOpreationKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
