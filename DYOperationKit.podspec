@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DYOperationKit'
   s.version          = '0.1.0'
-  s.summary          = 'Collection of Operation and possibly OperationQueue subclasses'
+  s.summary          = 'Operation and OperationQueue subclasses'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 
 # This description is used to generate tags and improve search results.
