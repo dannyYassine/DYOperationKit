@@ -1,0 +1,22 @@
+{
+  "name": "DYOperationKit",
+  "version": "0.1.0",
+  "summary": "A short description of DYOperationKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/dannyyassine/DYOperationKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dannyyassine": "dannyyassine@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/dannyyassine/DYOperationKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DYOperationKit/Classes/**/*"
+}

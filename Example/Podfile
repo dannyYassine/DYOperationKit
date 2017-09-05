@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DYOperationKit_Example' do
+  pod 'DYOperationKit', :path => '../'
+
+  target 'DYOperationKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,6 @@
+framework module DYOperationKit {
+  umbrella header "DYOperationKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
