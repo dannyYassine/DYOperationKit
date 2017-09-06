@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let operation1 = DownloadURLRessourceOperation()
-        operation1.url = URL(string: "https://static.pexels.com/photos/34950/pexels-photo.jpg")
+        operation1.request = URL(string: "https://static.pexels.com/photos/34950/pexels-photo.jpg")
         
         //        operation1.completionBlock = { [weak self] in
         //            DispatchQueue.main.async {
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         //        }
         
         let operation2 = DownloadURLRessourceOperation()
-        operation2.url = URL(string: "https://cdn.dribbble.com/users/63407/screenshots/3780917/dribbble_aloe_vera_bloom.png")
+        operation2.request = URL(string: "https://cdn.dribbble.com/users/63407/screenshots/3780917/dribbble_aloe_vera_bloom.png")
         
         //        operation2.completionBlock = { [weak self] in
         //            DispatchQueue.main.async {

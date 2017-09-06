@@ -41,7 +41,7 @@ public class DownloadImageRessourceOperation: DYOperation {
                 self?.response = image
                 self?.operationQueue.cancelAllOperations()
             } else {
-                self?.downloadURLRessourceOperation.url = self?.url
+                self?.downloadURLRessourceOperation.request = self?.url
             }
         }
         

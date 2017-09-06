@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public protocol DownloadURLRessourceOperationProtocol: OperationResponse {}
+public protocol DownloadURLRessourceOperationProtocol: OperationResponse, OperationRequest {}
 
 public class DownloadURLRessourceOperation: DYOperation, DownloadURLRessourceOperationProtocol {
     
@@ -20,10 +20,11 @@ public class DownloadURLRessourceOperation: DYOperation, DownloadURLRessourceOpe
         }
     }
     
-    public var url: URL?
+    public typealias Request = URL
+    public var request: URL?
     
     public override func start() {
-        if let _ = url {
+        if let _ = request {
             super.start()
         } else {
             finished()
@@ -31,7 +32,7 @@ public class DownloadURLRessourceOperation: DYOperation, DownloadURLRessourceOpe
     }
     
     public override func perform() {
-        if let url = url {
+        if let url = request {
             do {
                 let data = try Data(contentsOf: url)
                 let image = UIImage(data: data)

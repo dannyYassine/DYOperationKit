@@ -12,3 +12,8 @@ public protocol OperationResponse {
     associatedtype Response
     var response: Response? { get set }
 }
+
+public protocol OperationRequest {
+    associatedtype Request
+    var request: Request? { get set }
+}
